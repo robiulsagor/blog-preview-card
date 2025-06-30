@@ -1,0 +1,77 @@
+:root {
+  --main-color: #f4d04e;
+}
+
+@font-face {
+  font-family: "figtree-bold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100vh;
+  font-family: "figtree", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 384px;
+  min-height: 300px;
+  border: 1px solid #111;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 1);
+  background: white;
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.blog_category {
+  background: var(--main-color);
+  padding: 5px 10px;
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: "figtree-bold", sans-serif;
+  text-transform: capitalize;
+}
+
+.blog_published_date {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.blog_title {
+  font-size: 24px;
+  font-family: "figtree-bold", sans-serif;
+  color: #111;
+}
