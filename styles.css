@@ -25,6 +25,10 @@ body {
   font-family: "figtree", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -73,6 +77,12 @@ body {
   font-family: "figtree-bold", sans-serif;
   color: #111;
   margin-top: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog_title:hover {
+  color: var(--main-color);
 }
 
 .blog_desc {
